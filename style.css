@@ -1,0 +1,271 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* --- SECTION #shop : centrer verticalement et horizontalement --- */
+#shop {
+  display: flex;
+  flex-direction: column;   /* Empile les éléments verticalement */
+  align-items: center;      /* Centre horizontalement */
+  justify-content: center;  /* Centre verticalement */
+  padding: 40px 0;          /* Espace en haut et en bas */
+  background: #fff;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Conteneur global */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Slider & Images */
+.slider .slides img {
+  max-width: 500px;   /* Largeur max de 500px */
+  max-height: 300px;  /* Hauteur max de 300px */
+  width: auto;
+  margin: 0 auto;  
+  height: auto;
+  display: none;
+  text-align: center;
+}
+
+.slider .slides img.active {
+  max-width: 500px;
+  max-height: 300px;
+  margin: 0 auto;  
+  width: auto;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.slider .slides1 img {
+  max-width: 500px;
+  max-height: 300px;
+  width: auto;
+  margin: 0 auto;  
+  height: auto;
+  display: none;
+  text-align: center;
+}
+
+.slider .slides1 img.active {
+  max-width: 500px;
+  max-height: 300px;
+  width: auto;
+  margin: 0 auto;  
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Header & Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections (par défaut) */
+section {
+  padding: 40px 0;
+  background: #fff;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Boutons génériques */
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* Événements & Produits */
+.event,
+.product {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center; /* Centre le contenu du produit (titre, images, etc.) */
+}
+.slider .slides,
+.slider .slides1 {
+  text-align: center;  /* Just in case, to help with any inline elements */
+}
+
+/* Boutique: Product Box */
+.product-box {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.product-box .image-left,
+.product-box .image-right {
+  flex: 1;
+}
+
+.product-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bouton d'achat animé */
+.buy-btn {
+  position: relative;
+  bottom: 50px;
+  right: 50px;
+  background: #ff0000;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  animation: bounce 2s infinite;
+}
+
+/* Taille des boutons de navigation slider */
+.prev,
+.next,
+.prev1,
+.next1 {
+  width: 100px;
+  display: inline-block;
+  margin: 0 15px auto;  /* Some horizontal spacing */
+  position: relative;
+  left: 50px;
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Légende du produit */
+.product-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Médias */
+.media-gallery,
+.photo-gallery,
+.social-media {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Contact & Équipe */
+#contact a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.team p {
+  margin: 5px 0;
+}
+
+/* Pied de page */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 5px 0;
+  }
+}

@@ -15,10 +15,10 @@ body {
 /* --- SECTION #shop : centrer verticalement et horizontalement --- */
 #shop {
   display: flex;
-  flex-direction: column;   /* Empile les éléments verticalement */
-  align-items: center;      /* Centre horizontalement */
-  justify-content: center;  /* Centre verticalement */
-  padding: 40px 0;          /* Espace en haut et en bas */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
   background: #fff;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
@@ -33,41 +33,23 @@ body {
 }
 
 /* Slider & Images */
-.slider .slides img {
-  max-width: 500px;   /* Largeur max de 500px */
-  max-height: 300px;  /* Hauteur max de 300px */
-  width: auto;
-  margin: 0 auto;  
-  height: auto;
-  display: none;
-  text-align: center;
-}
-
-.slider .slides img.active {
-  max-width: 500px;
-  max-height: 300px;
-  margin: 0 auto;  
-  width: auto;
-  height: auto;
-  display: block;
-  text-align: center;
-}
-
+.slider .slides img,
 .slider .slides1 img {
   max-width: 500px;
   max-height: 300px;
   width: auto;
-  margin: 0 auto;  
+  margin: 0 auto;
   height: auto;
   display: none;
   text-align: center;
 }
 
+.slider .slides img.active,
 .slider .slides1 img.active {
   max-width: 500px;
   max-height: 300px;
+  margin: 0 auto;
   width: auto;
-  margin: 0 auto;  
   height: auto;
   display: block;
   text-align: center;
@@ -75,19 +57,33 @@ body {
 
 /* Header & Navigation */
 header {
-  background: #333;
+  background: linear-gradient(45deg, #444, #222);
   color: #fff;
   padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
 }
 
 header h1 {
-  margin-left: 20px;
+  font-family: 'Impact', sans-serif;
+  margin: 0;
 }
 
 nav ul {
@@ -104,10 +100,12 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
+  transform: scale(1.1);
 }
 
 /* Sections (par défaut) */
@@ -145,11 +143,12 @@ section h2 {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
-  text-align: center; /* Centre le contenu du produit (titre, images, etc.) */
+  text-align: center;
 }
+
 .slider .slides,
 .slider .slides1 {
-  text-align: center;  /* Just in case, to help with any inline elements */
+  text-align: center;
 }
 
 /* Boutique: Product Box */
@@ -196,7 +195,7 @@ section h2 {
 .next1 {
   width: 100px;
   display: inline-block;
-  margin: 0 15px auto;  /* Some horizontal spacing */
+  margin: 0 15px auto;
   position: relative;
   left: 50px;
 }

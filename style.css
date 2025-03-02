@@ -11,6 +11,31 @@ body {
   color: #333;
   background: #f9f9f9;
 }
+.team {
+  margin-top: 20px;
+}
+
+/* Flex container for each team member */
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 15px;        /* Space between image and text */
+  margin-bottom: 15px;
+}
+
+/* Smaller image styling */
+.team-member img {
+  width: 60px;      /* Adjust as needed for a smaller image */
+  height: auto;     /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: circular images */
+  object-fit: cover;
+}
+
+/* Remove default margin for the paragraph */
+.team-member p {
+  margin: 0;
+}
+
 
 /* --- SECTION #shop : centrer verticalement et horizontalement --- */
 #shop {

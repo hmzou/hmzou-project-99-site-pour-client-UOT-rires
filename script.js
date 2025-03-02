@@ -107,13 +107,13 @@ document.addEventListener("DOMContentLoaded", function() {
       updateTextContent(reverseTranslations);
       document.documentElement.lang = "fr";
       // Optionally update button text if desired:
-      this.textContent = "Translate to English";
+      this.textContent = "English";
     } else {
       // Translate to English using the translations mapping
       updateTextContent(translations);
       document.documentElement.lang = "en";
       // Optionally update button text if desired:
-      this.textContent = "Revert to French";
+      this.textContent = "Français";
     }
   });
 });

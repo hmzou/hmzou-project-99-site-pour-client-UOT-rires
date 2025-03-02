@@ -24,8 +24,8 @@ body {
   border-bottom: 1px solid #ddd;
 }
 .logo {
-  width: 50px;         /* Adjusts the logo width */
-  max-width: 100px;    /* Ensures it doesn't get too big on larger screens */
+  width: 250px;         /* Adjusts the logo width */
+  max-width: 500px;    /* Ensures it doesn't get too big on larger screens */
   height: auto;        /* Maintains the aspect ratio */
   margin-right: 15px;
   object-fit: contain; /* Makes sure the image scales properly */

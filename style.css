@@ -24,16 +24,16 @@ body {
   border-bottom: 1px solid #ddd;
 }
 .logo {
-  width: 250px;         /* Adjusts the logo width */
-  max-width: 500px;    /* Ensures it doesn't get too big on larger screens */
+  width: 80px;         /* Increased width */
+  max-width: 150px;    /* Updated max-width to allow a larger size on bigger screens */
   height: auto;        /* Maintains the aspect ratio */
   margin-right: 15px;
-  object-fit: contain; /* Makes sure the image scales properly */
-  /* Optional styling for a circular logo effect */
-  border-radius: 50%;  
-  border: 2px solid #fff;  /* Adds a white border */
+  object-fit: contain; /* Ensures the image scales properly */
+  border-radius: 50%;  /* Optional circular effect */
+  border: 2px solid #fff;  /* Optional border */
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);  /* Optional shadow for depth */
 }
+
 
 /* Conteneur global */
 .container {
